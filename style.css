@@ -7,13 +7,14 @@
 
 body {
     font-family: Arial,sans-serif;
-    font-size: 15px;
+   
 }
 
 h1 {
     font-family: "Crete Round",serif;
-    font-size: 30px;
+    font-size: 3rem;
     color: #444;
+    margin-top: 40px;
 }
 
 ul {
@@ -24,49 +25,50 @@ ul {
     color: #ff7a00;
 }
 
-.wrapper {
-    width: 940px;
+#container {
+    max-width:950px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 80px;
  
 }
 
 a { 
     list-style-type: none;
     color: #444;
+  
 }
 
 h2 {
-    color: #444;
-    font-size: 45px;
+    color: #777;
+    font-size: 2.5rem;
    
 }
 
-h3 {
-    font-size: 30px;
-    color: #444;
-}
 
-h4 {
-    font-size: 24px;
+
+h3 {
+    font-size: 2rem;
     color: #444;
     line-height: 12px;
 }
-h5 {
+h4 {
     color: gray;
-    font-size: 16px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     word-wrap: break-word;
 }
 
 p {
-    
     color: #777;
-    word-wrap:break-word;
+    font-size: 1.4rem;
+    text-align:justify;
+    justify-content:left;
+    word-wrap: break-word;
 }
 
 
 /*header*/
+
 
 header {
     height: 120px;
@@ -74,8 +76,7 @@ header {
 
     header h1 {
         float: left;
-     
-        border-top:solid 2px gray;
+        border-top:solid 2px #777;
         border-bottom:solid 2px gray;
 
     }
@@ -83,23 +84,27 @@ header {
 /*main-image*/
 
 #main__image {
-    height: 510px;
+    height: auto;
     background: url("images/img1.jpg") center;
+    max-width:100%;
+    display:block;
+
 }
 
     #main__image div h2 {
         font-weight: normal;
         text-transform: uppercase;
         text-align: center;
-        padding: 150px 0 40px 0px;
+        padding: 120px 0 40px 0px;
         margin-bottom: 20px;
-        color: whitesmoke;
-        font-family: "Crete Round",serif;
+        color:whitesmoke;
+        font-family:fantasy, Tahoma, Geneva, Verdana, sans-serif,serif;
     }
 .over__lay {
     background: rgba(00,00,00,0.40);
     height:510px;
-    border-radius: 10px 2px 2px 10px;
+    border-radius: 10px 0 0 10px;
+    
     
     
      }
@@ -113,9 +118,11 @@ header {
     margin: 0 auto;
     line-height: 50px;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 5px;
     position: relative;
     transition: transform 450ms, background-color 300ms 150ms;
+   
+   
 }
 
     .button__1:hover {
@@ -125,14 +132,13 @@ header {
 
 
 /* steps */
-#steps{
-    margin:20px 10px 40px 10px;
-    border:dashed 0.4px gray;
-    border-radius:20px;
+.list{
+    padding:60px 0 40px 0;
 }
+
 #steps h2 {
-    font-size: 35px;
-    margin-top: 30px;
+    font-size: 3rem;
+    margin-top: 50px;
     text-align: center;
     color: gray;
     border-bottom: solid 0.10px #ff7a00;
@@ -154,18 +160,24 @@ header {
 
 /*contact*/
 
-#contact h3 {
+#contact h2 {
     text-transform: uppercase;
     text-align: center;
     border-bottom: solid 0.10px #ff7a00;
-    color:gray;
+    color: gray;
 }
     #contact p{
-        margin-top:20px;
+        margin:20px 0 40px 0;
     }
     #contact ul li{
         text-align:center;
-    }
+        font-size:1.6rem;
+       margin-bottom:20px;  
+   }
+        #contact ul li i {
+          color: #ff7a00;
+         margin-right:10px;
+        }
 
 /*footer*/
 
@@ -186,3 +198,32 @@ footer {
     padding-top: 30px;
     color: #777;
 }
+@media all and (max-width:450px){
+    #container{
+        padding:0 20px;
+    }
+    h1{
+        font-size:2rem;
+       
+    }
+   
+    h2{
+        font-size:1.8rem;
+    }
+    #steps h2{
+        font-size:1.7rem;
+    }
+    h3{
+        font-size:1.6rem;
+    }
+    h4{
+        font-size:1.2rem;           
+    }
+    p{
+        font-size:1.1rem;
+    }
+    #contact ul li{
+        font-size:1.1rem;
+    }
+}
+
