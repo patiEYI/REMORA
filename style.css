@@ -34,7 +34,9 @@ ul {
 
 a { 
     list-style-type: none;
+    text-decoration: none;
     color: #444;
+   
   
 }
 
@@ -112,13 +114,15 @@ header {
     display: block;
     width: 200px;
     height: 50px;
-    background: #ff7a00;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
     color: #fff;
     font-size: 20px;
     margin: 0 auto;
     line-height: 50px;
     text-align: center;
     border-radius: 5px;
+    background-size: 200% auto;
+    box-shadow:3px 1px 1px 2px #eee;
     position: relative;
     transition: transform 450ms, background-color 300ms 150ms;
    
@@ -127,7 +131,8 @@ header {
 
     .button__1:hover {
         transform: scale(1.13);
-        background: #02b8dd;
+         background-position: right center;
+         
     }
 
 
@@ -183,7 +188,7 @@ header {
 
 footer {
     height: 260px;
-    background-color: #444;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
 }
 
     footer h1 {
@@ -203,8 +208,7 @@ footer {
         padding:0 20px;
     }
     h1{
-        font-size:2rem;
-       
+        font-size:2rem;  
     }
    
     h2{
